@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Verma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="user-select-none">
+
+    <!------------------------------- Making profile photo big ----------------------------------->
+
+    <div id="profile-image-animation" class="profile-image-animation-class">
+        <span class="profile-image-close" onclick="closeProfile()">&times;</span>
+        <!-- <img class="profile-image-content" id="profile-image-photo"> -->
+        <div class="profile-image-content" id="profile-image-photo"></div>
+    </div>
+
+    <!-- ----------------------------Profile photo div ends here ---------------------------------->
+
+    <!-- -----------------------------------Front Page------------------------ -->
+    <section>
+        <div>
+            <!-- SIde panel -->
+            <div class="side-panel">
+                <!-- Top Panel of side panel including links and profile photo -->
+                <div id="profile">
+                    <div id="profile-image" onclick="openProfile('./Images/my_image.jpg')">
+
+                    </div>
+
+                    <div id="links">
+                        <ul>
+                            <div class="links-div">
+                                <li><a href="https://www.linkedin.com/in/sahil-1512-verma/"><i
+                                            class="fa-brands fa-linkedin"></i></a></li>
+                            </div>
+                            <div class="links-div">
+                                <li><a href="https://x.com/sahilverma1512"><i class="fa-brands fa-twitter"></i></a></li>
+                            </div>
+                            <div class="links-div">
+                                <li><a href="https://github.com/sahilverma1512"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                            </div>
+                            <div class="links-div">
+                                <li><a href="https://www.instagram.com/sahill_1512/"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lower panel of side panel including navbar tags -->
+                <div id="nav-tags">
+                    <ul>
+                        <li><a href="#home-page" class="home"><i class="bi bi-house" class="icon"></i>
+                                <span>Home</span></a></li>
+                        <li><a href="#about-div" class="about"><i class="bi bi-file-earmark-person"></i>
+                                <span>About</span></a></li>
+                        <li><a href="#skills-div" class="skills">
+                        <li><i class="bi bi-file-earmark-code"></i> <span>Skills</span></li>
+                        <li><a href="#achievements-div" class="acheivements">
+                        <li><i class="bi bi-trophy"></i> <span>Acheivements</span></a></li>
+                        <li><a href="#getInTouch-div" class="getInTouch">
+                        <li><i class="bi bi-telephone"></i> <span>Get in touch</span> </a></li>
+                    </ul>
+
+                </div>
+                <div id="footer">
+                    <!-- <hr> -->
+                    <span><i class="bi bi-c-circle"></i> All rights 2024, Sahil Verma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------------- Front Page ends-------------------------- -->
+
+    <!------------------------------------------ Home section starts--------------- -->
+    <section id="home-page">
+        <div id="home-div" class="section-div-align">
+            <div id="name-div">
+                <h1 id="name1">Sahil Verma</h1>
+                <h2 id="name2">I'm a <span class="typing-container" id="typing-container"></span></h2>
+            </div>
+            <div id="mountain-quote">
+                <h4>Every line of code is a step in a journey of a thousand miles. Write with purpose, debug with
+                    patience, and refactor with wisdom.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-page">
+        <div class="section-div-align h1-tag-style" id="about-div">
+            <!-- <div> -->
+            <h1>About</h1>
+            <div id="about-main-image">
+
+            </div>
+
+            <div id="about-main-content-div">
+                <div id="about-main-content">
+                    <h3>Developer | Programmer | Creator | Innovator</h3>
+                    <div>
+                        <p>
+                            Hello Guys, My name is <b>Sahil Verma</b>.
+                            I am the founder of Byte Scholar and Co-founder of Algorism.
+                            I am a <strong>Computer Science </strong> student who is hackathon enthusiast, <b>MERN Stack
+                                Developer</b>, <b>Android Developer</b>, <b>Python Programmer</b>, <b>YouTuber</b> and
+                            many more..
+                        </p>
+                    </div>
+                    <div id="about-info-div">
+                        <div id="about-info-1" class="about-info-text">
+                            <ul class="about-info-ul">
+                                <li><i class="bi bi-caret-right-fill"></i> <b>College : </b> <span>ABES Institute of
+                                        Technology</span></li>
+                                <li><i class="bi bi-caret-right-fill"></i> <b>Course : </b> <span>Bachelors of
+                                        Technology</span></li>
+                                <li><i class="bi bi-caret-right-fill"></i> <b>Branch : </b> <span>Computer Science &
+                                        Engineering</span></li>
+                                <li><i class="bi bi-caret-right-fill"></i> <b>Duration : </b> <span>2022-2026</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="about-info-2" class="about-info-text">
+                            <ul class="about-info-ul">
+                                <li><i class="bi bi-caret-right-fill"></i> <b><a
+                                            href="https://www.linkedin.com/in/sahil-1512-verma/">LinkedIn</a></b></li>
+                                <li><i class="bi bi-caret-right-fill"></i> <b><a
+                                            href="https://www.instagram.com/sahill_1512/">Instagram</a></b></li>
+                                <li><i class="bi bi-caret-right-fill"></i> <b><a
+                                            href="https://github.com/sahilverma1512">Github</a></b></li>
+                                <li><i class="bi bi-caret-right-fill"></i> <b><a
+                                            href="https://x.com/sahilverma1512">Twitter</a></b></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="about-quote">
+                        Every line of code is a step in a journey of a thousand miles. Write with purpose, debug with
+                        patience, and refactor with wisdom.
+                        <div>
+                            <h4 style="margin-left: 300px; font-style: italic;">- <span>Sahil Verma</span></h4>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="hobby-interest-div">
+                    <h3>Hobbies & Interests</h3>
+                    <div id="hobby-interest-content">
+                        <div class="hobbies" id="hobby1">
+                            <div class="hidden-text">
+                                <span>Chess</span>
+                            </div>
+
+                        </div>
+                        <div class="hobbies" id="hobby2">
+                            <div class="hidden-text">
+                                <span>Flute</span>
+                            </div>
+                        </div>
+                        <div class="hobbies" id="hobby3">
+                            <div class="hidden-text">
+                                <span>Cooking</span>
+                            </div>
+                        </div>
+                        <div class="hobbies" id="hobby4">
+                            <div class="hidden-text">
+                                <span>Coding</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- </div> -->
+
+    </section>
+
+    <section id="skills-page">
+        <div class="section-div-align h1-tag-style" id="skills-div">
+            <div>
+                <h1>Skills</h1>
+                <p style="margin-left: 30px; margin-top: 18px; font-size: 20px; font-weight: 100;"
+                    class="user-select-none">These are the skills I have currently but also I am in learning phase so
+                    these are getting enhanced day by day.</p>
+                <div id="skills-content-div">
+                    <div id="technical-skills">
+                        <h3>Technical Skills</h3>
+                        <div id="tech-skills">
+
+                            <div class="skills-meter">
+                                <h5>MERN Stack</h5>
+                                <div class="progress" role="progressbar" aria-label="Mern Stack" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Python</h5>
+                                <div class="progress" role="progressbar" aria-label="Python" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Kotlin</h5>
+                                <div class="progress" role="progressbar" aria-label="Kotlin" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>SQL</h5>
+
+                                <div class="progress" role="progressbar" aria-label="SQL" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>C++</h5>
+
+                                <div class="progress" role="progressbar" aria-label="C++" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Django</h5>
+
+                                <div class="progress" role="progressbar" aria-label="Django" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="professional-skills">
+                        <h3>Professional Skills</h3>
+                        <div id="prof-skills">
+                            <div class="skills-meter">
+                                <h5>Communication</h5>
+                                <div class="progress" role="progressbar" aria-label="Communication" aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Creativeness</h5>
+                                <div class="progress" role="progressbar" aria-label="Creativeness" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Team Working</h5>
+                                <div class="progress" role="progressbar" aria-label="Team Working" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Problem Solving</h5>
+                                <div class="progress" role="progressbar" aria-label="Problem Solving" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skills-meter">
+                                <h5>Social</h5>
+                                <div class="progress" role="progressbar" aria-label="Social" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="achievements-page">
+        <div class="section-div-align h1-tag-style" id="achievements-div">
+            <div>
+                <h1>Achievements</h1>
+                <div class="facts-div">
+                    <div>
+                        <div class="facts">
+                            <h2>8+</h2>
+                            <h5>Hackathon</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="facts">
+                            <h2>7+</h2>
+                            <h5>Coding</h5>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="facts">
+                            <h2>10+</h2>
+                            <h5>Other</h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Main achievements -->
+                <div id="achievements-div-main-content">
+                    <div id="achievements-div-main-text">
+                        <!-- <h5><span id="showAll" class="active">Photos</span></h5> -->
+                        <div class="achievements-images">
+                            <div class="box" data-type="all" id="img1"></div>
+                            <div class="box" data-type="all" id="img2"></div>
+                            <div class="box" data-type="hackathon" id="img3"></div>
+                            <div class="box" data-type="hackathon" id="img4"></div>
+                            <div class="box" data-type="others" id="img5"></div>
+                            <div class="box" data-type="others" id="img6"></div>
+                            <!-- <div class="box" data-type="hackathon" id="img7"></div>
+                            <div class="box" data-type="hackathon" id="img8"></div>
+                            <div class="box" data-type="others" id="img9"></div>
+                            <div class="box" data-type="others" id="img10"></div> -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- --------------------------------------Get in touch----------------------------------------------------------- -->
+    <section id="getInTouch-page">
+        <div class="section-div-align h1-tag-style" id="getInTouch-div">
+            <div>
+                <h1>Get in touch</h1>
+                <p style="font-size: 18px; font-weight: 100; padding: 30px;">Feel free to contact me as I am a student so calls may not be available from 9:00 am to 5:00 pm.Otherwise, anytime you can call me or email me or contact through any social media mentioned.
+                </p>
+                <div id="get-in-touch">
+                    <div id="get-in-touch-left">
+                        <div >
+                            <div class="contact-div" >
+                                <i class="bi bi-geo-alt contact"></i>
+                                <div class="contact-span">
+                                    <span>Ghaziabad, Uttar Pradesh</span>
+                                </div>
+                            </div>
+                            <div class="contact-div">
+                                <i class="bi bi-envelope-at get-icon contact"></i>
+                                <div  class="contact-span">
+                                    <span>sahilverma1512@gmail.com</span>
+                                </div>
+                                
+                            </div>
+                            <div class="contact-div">
+                                <i class="bi bi-telephone contact"></i>
+                                <div  class="contact-span">
+                                    <span>+91 8851596882</span>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- Location of   -->
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d218.77861329068355!2d77.3526804988253!3d28.675948764415562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d28.676037299999997!2d77.3527529!4m3!3m2!1d28.676076499999997!2d77.35275469999999!5e0!3m2!1sen!2sin!4v1716877464785!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.77861329068344!2d77.3526804988253!3d28.67594876441561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfaf37e42fd55%3A0x32e47cca0e4b95ad!2sPrakash%20Industrial%20Estate%2C%20Sahibabad%20Industrial%20Area%20Site%204%2C%20Sahibabad%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201005!5e0!3m2!1sen!2sin!4v1716877812416!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="get-in-touch-right">
+                        <form action="https://formspree.io/f/moqgooql" method="post" onsubmit="handleSubmit(event)" class="needs-validation" id="contact-form" novalidate>
+                        <div >
+                            <div>
+                                <div style="margin-left: 20px; margin-top: 10px;">
+                                    <label for="my-email" class="form-label">To</label>
+                                    <input class="form-control" type="email" placeholder="Email" id="my-email" value="sahilverma1512@gmail.com" disabled readonly style="width: 480px; ">
+                                </div>
+                            </div>
+                            <div>
+                                <div style="margin-left: 20px; margin-top: 10px;">
+                                    <label for="visitor-email" class="form-label">From</label>
+                                    <input class="form-control" type="email" name="Email" placeholder="Your Email" id="visitor-email" required style="width: 480px;">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                </div>
+                            </div>
+                            <div style="display: flex;">
+                                <div style="margin-left: 20px; margin-top: 10px;">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="Name" id="name" style="width: 230px; " required>
+                                    <div class="invalid-feedback">
+                                        Please enter your name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Nice name!
+                                    </div>
+                                </div>
+                                <div style="margin-left: 20px; margin-top: 10px;">
+                                    <label for="Phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="text" placeholder="Phone" name="Phone" id="phone" style="width: 230px; " required>
+                                    <div class="invalid-feedback">
+                                        Please enter your phone number.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-left: 20px; margin-top: 10px;" >
+                                <label for="subject" class="form-label">Subject</label>
+                                <input class="form-control" type="text" name="Subject" placeholder="Subject" id="subject" style="width: 480px; " required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid subject.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <!-- <div>
+                                <textarea name="" id=""></textarea>
+                            </div> -->
+                            <div style="margin-left: 20px; margin-top: 10px;" >
+                                <label for="Description">Description</label>
+                                <textarea class="form-control" name="Description" placeholder="Description" id="Description" style="width: 480px; height: 250px; " required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter a valid description.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                            <div style="margin-top: 20px; display: flex; justify-content: center;">
+                                <input type="hidden" name="_next" value="index.html">
+                                <input class="btn btn-primary" type="submit" value="Submit"  id="submit-btn" data-url="index.html" onclick="showToast()">
+                            </div>
+                            <!-- <div id="toast">Form successful, psasasassa</div> -->
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main script file -->
+    <script src="script.js"></script>
+</body>
+</html>

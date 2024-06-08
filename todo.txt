@@ -1,0 +1,3 @@
+responsive
+navbar me active link lagani h shayad js se lagegi
+smooth typewriter effect im Developer 

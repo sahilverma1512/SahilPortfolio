@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+/*---------------------------------------- SIde pannel -------------------------------------------------- */
+.side-panel {
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    left: 0%;
+    background-color: #050b39;
+}
+
+/* ----------------------------------------------porfile begins-------------------------------------------- */
+#profile {
+    height: 250px;
+    width: 100%;
+}
+
+#profile-image {
+    background-image: url(./Images/my_image.jpg);
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    border: 10px solid #cecfdb;
+    ;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    transition: all ease-in-out 0.2s;
+}
+
+#profile-image:hover {
+    transform: scale(1.03);
+    border-color: rgb(84, 164, 234);
+    opacity: 0.5;
+}
+
+
+/*---------------------- Profile image bigger CSS code here---------------------  */
+
+.profile-image-animation-class {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(0, 0, 0, 0.814);
+}
+
+.profile-image-content {
+    margin: auto;
+    display: block;
+    width: 600px;
+    height: 600px;
+    /* max-width: 700px; */
+    border-radius: 50%;
+    background-image: url(./Images/my_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-image-content,
+.close {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.profile-image-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.profile-image-close:hover,
+.profile-image-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------------------------------Profile photo bigger CSS ends------------------------------------------ */
+
+
+#links {
+    font-size: 30px;
+
+}
+
+#links ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -30px;
+    padding-left: 0%;
+}
+
+#links li {
+    /* padding-left: 0%; */
+    position: absolute;
+    top: 200px;
+    color: rgb(237, 243, 253);
+    transition: all 0.2s ease-in;
+}
+
+#links a {
+    color: rgb(237, 243, 253);
+    transition: all 0.2s ease-in-out;
+}
+
+#links a:hover {
+    color: rgb(84, 164, 234);
+}
+
+
+
+/* porfile section khatam */
+
+/* Navbar tags */
+#nav-tags {
+    height: 400px;
+    width: 320px;
+}
+
+#nav-tags ul {
+    padding-left: 0%;
+    margin-top: 50px;
+    width: fit-content;
+}
+
+#nav-tags li {
+    width: fit-content;
+    /* color: #cecfdb; */
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 50px;
+    margin-top: 35px;
+    list-style-type: none;
+    font-family: "glory";
+    font-weight: 400;
+}
+
+#nav-tags a {
+    color: #cecfdb;
+    text-decoration: none;
+    width: fit-content;
+    transition: all ease-in-out 0.2s;
+}
+
+#nav-tags a:hover {
+    color: rgb(84, 164, 234);
+}
+
+/* navbar khatam */
+
+/* footer */
+
+#footer {
+    color: #cecfdb;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* #footer hr{
+    color: #cecfdb;
+    margin-bottom: 10px;
+} */
+
+/* .home:active{
+    font-size: 10px;
+    color: brown;
+} */
+
+
+
+/* ----------------------------------------Side Panel Khatam---------------------------------------------------- */
+
+
+
+
+/* #nav-tags span:hover+icon{
+    color: rgb(188, 32, 32);
+} */
+
+
+
+
+
+
+.section-div-align {
+    width: 1153px;
+    position: absolute;
+    left: 320px;
+}
+
+
+
+/* Home Page starts */
+
+#home-div {
+    height: 800px;
+    background-image: url(./Images/main\ img11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-position-x: center;
+    /* filter: blur; */
+
+}
+
+#name-div {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    /* background-color: azure; */
+}
+
+#name1 {
+    font-family: "Crimson text";
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#name2 {
+    color: rgb(227, 227, 227);
+    font-size: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#name2 span {
+    color: #7EF9F2;
+}
+
+.typing-container {
+    font-family: "rajdhani";
+    border-right: 3px solid rgb(91, 209, 245);
+    border-radius: 2px;
+    padding-right: 5px;
+}
+
+#mountain-quote{
+    color: rgb(255, 255, 255);
+    font-family: 'itim';
+    font-size: larger;
+    position: absolute;
+    top: 600px;
+    text-align: center;
+    /* left: 250px; */
+}
+
+/* Home page ends */
+
+
+
+/* --------------------------------------------------------------About page starts ------------------------------------------*/
+
+#about-div {
+    top: 800px;
+    height: 100%;
+    background-color: rgb(221, 237, 237);
+}
+
+.h1-tag-style h1 {
+    font-family: "itim";
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    border-bottom: 5px solid rgb(6, 48, 255);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+#about-main-content-div {
+    height: 380px;
+    width: 680px;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 150px;
+    left: 450px;
+}
+
+#about-main-image {
+    height: 400px;
+    width: 400px;
+    background-image: url(./Images/my_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+#about-main-content {
+    height: fit-content;
+    width: fit-content;
+    /* position: absolute;
+    top: 100px;
+    left: 100px; */
+}
+
+#about-main-content p {
+    font-size: 17px;
+}
+
+#about-main-content h3 {
+    font-size: 35px;
+    color: rgb(20, 30, 82);
+    font-weight: bolder;
+    font-family: "itim";
+}
+
+#about-info-div {
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+#about-info-1 {
+    margin-right: 50px;
+}
+
+.about-info-text {
+    margin-left: 30px;
+}
+
+.about-info-text b {
+    font-size: 20px;
+    list-style-type: none;
+    color: 050b39;
+}
+
+.about-info-text span {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.about-info-ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.about-info-ul a {
+    text-decoration: none;
+    color: #050b39;
+}
+
+#about-quote {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: normal;
+    font-weight: 400;
+    color: #161c48;
+}
+
+/* Hobbies and interest=----------------------------------------- */
+#hobby-interest-div {
+    position: relative;
+    top: 20px;
+    left: -420px;
+    height: fit-content;
+    width: 800px;
+    /* border: 2px solid black; */
+}
+
+#hobby-interest-div h3 {
+    font-size: 30px;
+    color: rgb(20, 30, 82);
+    font-weight: 400;
+    font-family: "itim";
+}
+
+#hobby-interest-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.hobbies {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    /* border: 1px solid darkblue; */
+    box-shadow: rgba(8, 1, 45, 0.632) 0px 3px 8px;
+    transition: transform 0.5s ease;
+
+}
+
+
+#hobby1 {
+    background-image: url(./Images/hobby/1.png);
+    background-size: cover;
+}
+
+#hobby2 {
+    background-image: url(./Images/hobby/2.png);
+    background-size: cover;
+}
+
+#hobby3 {
+    background-image: url(./Images/hobby/3.png);
+    background-size: cover;
+}
+
+#hobby4 {
+    background-image: url(./Images/hobby/4.png);
+    background-size: cover;
+}
+
+
+.hobbies:hover {
+    transform: scale(1.05);
+}
+
+.hidden-text {
+    display: none;
+    font-size: 30px;
+    border-radius: 50%;
+    padding-top: 35px;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #010227da;
+    color: white;
+    box-sizing: border-box;
+    transition: opacity 1s ease;
+}
+
+.hobbies:hover .hidden-text {
+    display: block;
+    /* transform: scale(2); */
+    opacity: 1;
+}
+
+@keyframes hidden-text-zoom {}
+
+/* ---------------------------------About page ends--------------------------------------------------- */
+
+
+/* ---------------------------------skills page starts---------------------------------------------------- */
+
+#skills-div {
+    top: 1542px;
+    height: 100%;
+    background-color: rgb(230, 246, 246);
+}
+
+#skills-content-div {
+    height: fit-content;
+    display: flex;
+    margin-top: 30px;
+}
+
+#skills-content-div h3 {
+    font-family: "itim";
+    font-size: 28px;
+    text-align: center;
+}
+
+#technical-skills {
+    height: fit-content;
+    width: 43%;
+    /* border: 2px solid black; */
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+#professional-skills {
+    height: fit-content;
+    width: 43%;
+    /* border: 2px solid black; */
+    /* margin-left: 50px; */
+    /* margin-right: 400px; */
+}
+
+
+.skills-meter {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.skills-meter h5 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.progress {
+    background-color: #f3f58c;
+}
+
+.progress-bar {
+    background-color: #585EEB;
+}
+
+
+/* -----------------------------achievements Page starts ----------------------------------------*/
+#achievements-div {
+    top: 2285px;
+    height: 1000px;
+    background-color: rgb(235, 250, 250);
+}
+
+.facts-div {
+    height: 160px;
+    width: 40%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-self: center/+; */
+    align-items: center;
+    margin: auto;
+    text-align: center
+}
+
+.facts-div h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -5px;
+    font-family: "itim";
+}
+
+.facts-div h2 {
+    font-family: "itim";
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.facts {
+    height: 110px;
+    width: 110px;
+    border: 1px solid rgb(25, 4, 83);
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(214, 231, 245);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/* Main achievements start */
+
+#achievements-div-main-text {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: fit-content;
+}
+
+#achievements-div-main-text h5 {
+    font-family: "itim";
+    font-weight: 500;
+    color: #4d5dd6;
+    text-decoration: none;
+    text-align: center;
+}
+
+#achievements-div-main-text span:hover {
+    color: rgb(10, 31, 88);
+    /* font-weight: bolder; */
+}
+
+.achievements-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    /* padding: 10px; */
+    /* gap: 200px; */
+    /* margin-top: 100px; */
+    /* padding: 50px; */
+    /* margin-left:100px;  */
+    margin-top: 50px;
+    margin-left: 60px;
+    /* margin-bottom: 100px; */
+}
+
+.box {
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: lightcoral; */
+    /* color: white; */
+    /* font-size: 18px; */
+    display: flex;
+    /* justify-content: center; */
+
+    /* margin-right: 100px; */
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s ease-in-out;
+    /* margin-left: 100px; */
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    position: absolute;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+#img1 {
+    background-image: url(./Images/Achievements/hackthon1.jpg);
+    background-size: cover;
+    height: 300px;
+    background-position-x: center;
+
+    width: 350px;
+}
+
+#img2 {
+    background-image: url(./Images/Achievements/Hackathon3.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    background-position-x: center;
+
+}
+
+#img3 {
+    background-image: url(./Images/Achievements/tech3.jpg);
+    /* background-image: ; */
+    /* margin-right:100px; */
+    height: 650px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#img4 {
+    background-image: url(./Images/Achievements/non-tech1.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    position: relative;
+    top: -350px;
+    background-position-x: center;
+
+}
+
+#img5 {
+    background-image: url(./Images/Achievements/tech1.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    position: relative;
+    top: -350px;
+    background-position-x: center;
+
+}
+
+/* #img6 {
+    background-image: url(./Images/my_image.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+} */
+
+/* #img7{
+    background-image: url(./Images/image2.jpg);
+    background-size: cover;
+}
+#img8{
+    background-image: url(./Images/image2.jpg);
+    background-size: cover;
+}
+#img9{
+    background-image: url(./Images/image2.jpg);
+    background-size: cover;
+}
+#img10{
+    background-image: url(./Images/image2.jpg);
+    background-size: cover;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* get in touch page */
+
+#getInTouch-div {
+    top: 3285px;
+    /* top: 4000px; */
+    height: 1000px;
+    background-color: rgb(221, 237, 247);
+}
+
+#get-in-touch {
+    height: 800px;
+    width: 100%;
+    margin-top: -20px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    display: flex;
+}
+
+#get-in-touch-left {
+    /* border: 2px solid black; */
+    height: 800px;
+    width: 45%;
+    margin-left: 30px;
+    background-color: #EEF7FF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+}
+
+#get-in-touch-right {
+    /* border: 2px solid black; */
+    height: 800px;
+    width: 45%;
+    margin-left: 30px;
+    background-color: #EEF7FF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+
+}
+
+.contact {
+    font-size: 35px;
+    margin-right: 10px;
+
+}
+
+
+
+.contact-div {
+    margin-top: 20px;
+    display: flex;
+    /* align-items: center; */
+    margin-left: 30px;
+    text-align: center;
+    width: fit-content;
+}
+
+.contact-span {
+    margin-top: 10px;
+
+}
+
+.contact-span span {
+    font-size: 19px;
+    font-family: "itim";
+
+}
+
+.contact-span>span:hover {
+    color: #3745af;
+}
+
+/* Contact form */
+/* #contact-form input{
+    background-color: #f6f0f0;
+} */
+
+#get-in-touch-left iframe {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+/* Up circle  */
+
+/*  */
+
