@@ -223,7 +223,7 @@ body {
 
 
 .section-div-align {
-    width: 1153px;
+    width: 1200px;
     position: absolute;
     left: 320px;
 }
@@ -296,7 +296,7 @@ body {
 
 #about-div {
     top: 800px;
-    height: 100%;
+    height: 105%;
     background-color: rgb(221, 237, 237);
 }
 
@@ -484,7 +484,7 @@ body {
 
 #skills-div {
     top: 1534px;
-    height: 100%;
+    height: 105%;
     background-color: rgb(230, 246, 246);
 }
 
@@ -539,7 +539,7 @@ body {
 /* -----------------------------achievements Page starts ----------------------------------------*/
 #achievements-div {
     top: 2270px;
-    height: 1000px;
+    height: 1100px;
     background-color: rgb(235, 250, 250);
 }
 
